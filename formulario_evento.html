@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear Evento</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<button id="modoBN" onclick="modoBlancoNegro()"> Modo Daltonismo </button>
+
+<body>
+<div class="contenedor">
+    <!-- Menú -->
+    <aside class="menu">
+        <div class="logo">
+            <h2>EVENTOS</h2>
+        </div>
+        <ul>
+            <li><a href="dashboard.php">🏠 Inicio</a></li>
+            <li><a href="formulario_evento.html">➕ Crear Evento</a></li>
+            <li><a href="editar_evento.html">✏ Modificar Evento</a></li>
+            <li><a href="confirmar_eliminacion.html">🗑 Eliminar Evento</a></li>
+            <li><a href="tabla_eventos.php">🔍 Consultar Evento</a></li>
+            <li><a href="cerrar.php">🚪 Cerrar Sesión</a></li>
+        </ul>
+    </aside>
+    <!-- Contenido -->
+    <main class="principal">
+        <div class="encabezado">
+            <h1>Crear Nuevo Evento</h1>
+            <div class="usuario">
+            </div>
+        </div>
+        <div class="formulario">
+            <form action="guardar_evento.php" method="POST">
+
+                <div class="campo">
+                    <label>Nombre del Evento</label>
+                    <input
+                    type="text"
+                    name="nombre"
+                    required>
+                </div>
+                <div class="campo">
+                    <label>Fecha</label>
+                    <input
+                    type="date"
+                    name="fecha"
+                    required>
+                </div>
+                <div class="campo">
+                    <label>Hora</label>
+                    <input
+                    type="time"
+                    name="hora"
+                    required>
+                </div>
+                <div class="campo">
+                    <label>Lugar</label>
+                    <input
+                    type="text"
+                    name="lugar"
+                    required>
+                </div>
+                <div class="campo">
+                    <label>Descripción</label>
+                    <textarea
+                    name="descripcion"
+                    rows="5"></textarea>
+                </div>
+                <div class="botones">
+                    <button class="guardar" type="submit">
+                        Guardar Evento
+                    </button>
+                    <a class="cancelar" href="dashboard.html">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+
+    <script>
+function modoBlancoNegro() {
+    document.body.classList.toggle("blanco-negro");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,868 @@
+
+
+/*=========================================
+  SISTEMA DE GESTIÓN DE EVENTOS
+  Archivo: estilos.css
+=========================================*/
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Fondo */
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/*==============================
+    CONTENEDOR LOGIN
+===============================*/
+
+.contenedor-login{
+    width:950px;
+    max-width:95%;
+    height:520px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/*==============================
+      IMAGEN IZQUIERDA
+===============================*/
+
+.login-imagen{
+
+    width:50%;
+
+    background:linear-gradient(135deg,#1e4ea1,#0d2f78);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.login-imagen img{
+
+    width:85%;
+
+    max-width:350px;
+
+    object-fit:contain;
+}
+
+/*==============================
+    FORMULARIO
+===============================*/
+
+.login-formulario{
+
+    width:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:60px;
+}
+
+/* Título */
+
+.login-formulario h2{
+
+    text-align:center;
+
+    color:#123d8d;
+
+    margin-bottom:35px;
+
+    font-size:30px;
+}
+
+/* Grupo */
+
+.grupo{
+
+    margin-bottom:22px;
+}
+
+/* Etiquetas */
+
+.grupo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#555;
+
+    font-weight:bold;
+
+    font-size:14px;
+}
+
+/* Inputs */
+
+.grupo input{
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #cfcfcf;
+
+    border-radius:6px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+.grupo input:focus{
+
+    border-color:#1d56b3;
+
+    box-shadow:0 0 5px rgba(29,86,179,.3);
+}
+
+/*==============================
+      BOTÓN
+===============================*/
+
+.btn-login{
+
+    width:100%;
+
+    background:#1657be;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-login:hover{
+
+    background:#0f469b;
+}
+
+/*==============================
+    REGISTRARSE
+===============================*/
+
+.registrarse{
+
+    margin-top:30px;
+
+    text-align:center;
+}
+
+.registrarse p{
+
+    color:#555;
+
+    margin-bottom:8px;
+}
+
+.registrarse a{
+
+    color:#0d47a1;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.registrarse a:hover{
+
+    text-decoration:underline;
+}
+
+/*==============================
+      RESPONSIVE
+===============================*/
+
+@media(max-width:900px){
+
+    .contenedor-login{
+
+        flex-direction:column;
+
+        width:95%;
+
+        height:auto;
+    }
+
+    .login-imagen{
+
+        width:100%;
+
+        height:220px;
+    }
+
+    .login-formulario{
+
+        width:100%;
+
+        padding:40px 30px;
+    }
+}
+
+/*==============================
+      EFECTOS
+===============================*/
+
+.grupo input::placeholder{
+
+    color:#9b9b9b;
+}
+
+.btn-login:active{
+
+    transform:scale(.98);
+}
+
+.login-formulario h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    background:#1657be;
+
+    margin:12px auto 0;
+
+    border-radius:20px;
+}
+
+/*=========================================
+        DASHBOARD
+=========================================*/
+
+.contenedor{
+
+    display:flex;
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#eef2f7;
+
+}
+
+/*=====================
+        MENÚ
+======================*/
+
+.menu{
+
+    width:260px;
+
+    background:#123d8d;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    padding:30px;
+
+    font-size:24px;
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+}
+
+.menu ul{
+
+    list-style:none;
+
+}
+
+.menu ul li{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.menu ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    display:block;
+
+    padding:18px 25px;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.menu ul li a:hover{
+
+    background:#0b2e73;
+
+    padding-left:35px;
+
+}
+
+/*=====================
+      CONTENIDO
+======================*/
+
+.principal{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+/*=====================
+      ENCABEZADO
+======================*/
+
+.encabezado{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:20px 30px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.encabezado h1{
+
+    color:#123d8d;
+
+}
+
+.usuario{
+
+    font-size:18px;
+
+}
+
+/*=====================
+      TARJETAS
+======================*/
+
+.tarjetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.tarjeta{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.tarjeta h3{
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.tarjeta h2{
+
+    color:#1657be;
+
+    font-size:40px;
+
+}
+
+/*=====================
+      BIENVENIDA
+======================*/
+
+.bienvenida{
+
+    margin-top:35px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+.bienvenida h2{
+
+    color:#123d8d;
+
+    margin-bottom:15px;
+
+}
+
+.bienvenida p{
+
+    line-height:28px;
+
+    color:#555;
+
+}
+
+/*=====================
+      RESPONSIVE
+======================*/
+
+@media(max-width:900px){
+
+.menu{
+
+    width:220px;
+
+}
+
+.encabezado{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.contenedor{
+
+    flex-direction:column;
+
+}
+
+.menu{
+
+    width:100%;
+
+    min-height:auto;
+
+}
+
+}
+
+/*=========================================
+      FORMULARIOS
+=========================================*/
+
+.formulario{
+
+    margin-top:30px;
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+}
+
+.campo{
+
+    margin-bottom:20px;
+
+}
+
+.campo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+.campo input,
+.campo textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #d5d5d5;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.campo textarea{
+
+    resize:vertical;
+
+}
+
+.campo input:focus,
+.campo textarea:focus{
+
+    border:1px solid #1657be;
+
+}
+
+.botones{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+.guardar{
+
+    background:#1657be;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 28px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.guardar:hover{
+
+    background:#0d47a1;
+
+}
+
+.cancelar{
+
+    background:#d9534f;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:13px 28px;
+
+    border-radius:6px;
+
+}
+
+.cancelar:hover{
+
+    background:#b52b27;
+
+}
+
+/*=========================================
+        TABLAS
+=========================================*/
+
+.tabla{
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+    overflow:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#123d8d;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+table tr:hover{
+
+    background:#f5f5f5;
+
+}
+
+/*=========================
+BOTÓN EDITAR
+==========================*/
+
+.editar{
+
+    background:#f0ad4e;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+    margin-right:8px;
+
+}
+
+.editar:hover{
+
+    background:#d98c1d;
+
+}
+
+/*=========================
+BOTÓN ELIMINAR
+==========================*/
+
+.eliminar{
+
+    background:#d9534f;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+}
+
+.eliminar:hover{
+
+    background:#b52b27;
+
+}
+
+
+/*=========================================
+      ELIMINAR EVENTO
+=========================================*/
+
+.mensaje-eliminar{
+
+    background:#ffffff;
+
+    margin-top:30px;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+}
+
+.mensaje-eliminar h2{
+
+    color:#c62828;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.eliminar-final{
+
+    background:#c62828;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 30px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    margin-right:15px;
+
+}
+
+.eliminar-final:hover{
+
+    background:#a31515;
+
+}
+
+/*==============================
+SELECT
+==============================*/
+
+select{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #d5d5d5;
+
+border-radius:6px;
+
+font-size:15px;
+
+background:white;
+
+outline:none;
+
+}
+
+select:focus{
+
+border:1px solid #1657be;
+
+}
+
+/* Botón Modo Blanco y Negro */
+
+#modoBN{
+    position: fixed;
+    top: 105px;
+    right: 35px;
+    padding: 12px 20px;
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+}
+
+#modoBN:hover{
+    background: #fff;
+    color: #000;
+    border-color: #000;
+}
+/*=========================
+    MODO BLANCO Y NEGRO
+=========================*/
+
+body.blanco-negro{
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+body.blanco-negro img{
+    filter: grayscale(100%);
+}

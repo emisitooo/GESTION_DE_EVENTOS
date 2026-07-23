@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="contenedor-login">
+
+    <!-- Imagen -->
+    <div class="login-imagen">
+        
+
+        <img src="imagenes\logoPagina.png" alt="Registro">
+
+    </div>
+
+    <!-- Formulario -->
+    <div class="login-formulario">
+
+        <h2> Registrarse </h2>
+
+        <form action="guardar_usuario.php" method="POST">
+
+            <div class="grupo">
+                <label>Nombre Completo</label>
+                <input type="text"
+                       name="nombre"
+                       placeholder="Ingrese su nombre"
+                       required>
+            </div>
+
+            <div class="grupo">
+                <label>Correo Electrónico</label>
+                <input type="email"
+                       name="correo"
+                       placeholder="correo@ejemplo.com"
+                       required>
+            </div>
+
+            <div class="grupo">
+                <label>Usuario</label>
+                <input type="text"
+                       name="usuario"
+                       placeholder="Nombre de usuario"
+                       required>
+            </div>
+
+            <div class="grupo">
+                <label>Contraseña</label>
+                <input type="password"
+                       name="contraseña"
+                       placeholder="********"
+                       required>
+            </div>
+
+            <div class="grupo">
+                <label>Confirmar Contraseña</label>
+                <input type="password"
+                       name="confirmar"
+                       placeholder="********"
+                       required>
+            </div>
+
+            <button type="submit" class="btn-login">
+                REGISTRARSE
+            </button>
+
+        </form>
+
+        <div class="registrarse">
+
+            <p>¿Ya tienes una cuenta?</p>
+
+            <a href="Inicio de sesion.html">
+                Iniciar Sesión
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

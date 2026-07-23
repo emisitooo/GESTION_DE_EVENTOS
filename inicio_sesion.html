@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Eventos</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<button id="modoBN" onclick="modoBlancoNegro()"> Modo Daltonismo </button>
+
+<body>
+
+<div class="contenedor-login">
+
+    <!-- Imagen del lado izquierdo -->
+    <div class="login-imagen">
+
+        <img src="imagenes\logoPagina.png" alt="Gestion de Eventos" >
+
+    </div>
+
+
+    <!-- Formulario -->
+    <div class="login-formulario">
+
+        <h2>Iniciar Sesión</h2>
+
+        <form action="validar.php" method="POST">
+
+            <div class="grupo">
+
+                <label>Usuario</label>
+
+                <input
+                    type="text"
+                    name="usuario"
+                    placeholder="Ingrese su usuario"
+                    required>
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label>Contraseña</label>
+
+                <input
+                    type="password"
+                    name="contraseña"
+                    placeholder="Ingrese su contraseña"
+                    required>
+
+            </div>
+
+            <button type="submit" class="btn-login">
+                INGRESAR
+            </button>
+
+        </form>
+
+
+        <div class="registrarse">
+
+            <p>¿No tienes una cuenta?</p>
+
+            <a href="registrarse.html">
+                Registrarse
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script>
+function modoBlancoNegro() {
+    document.body.classList.toggle("blanco-negro");
+}
+</script>
+
+
+
+</body>
+</html>
